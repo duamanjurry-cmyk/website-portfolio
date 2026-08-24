@@ -1,0 +1,98 @@
+{
+  "ownerName": "YOUR NAME",
+  "initials": "YN",
+  "heroEyebrow": "DIGITAL MARKETING \u2022 CRM \u2022 AUTOMATION \u2022 REAL ESTATE",
+  "heroTitle": "Marketing systems and digital work built to move business forward.",
+  "heroText": "A professional portfolio for presenting real estate marketing, email campaigns, websites, landing pages, CRM workflows, automation, database projects, reports, SOPs, PDFs, images, files, and video.",
+  "aboutTitle": "Marketing execution meets operational systems.",
+  "aboutText": "Replace this paragraph from the admin dashboard with your professional introduction. Focus on the combination of marketing, real estate, CRM, automation, operations, and administrative support that best represents your work.",
+  "email": "you@example.com",
+  "linkedin": "",
+  "resume": "",
+  "projects": [
+    {
+      "title": "Real Estate Marketing Campaign",
+      "category": "Real Estate",
+      "mediaType": "image",
+      "thumbnail": "",
+      "media": "",
+      "description": "Insert a property campaign, brochure, social media creative, listing package, or investor marketing sample.",
+      "challenge": "Describe the business need or marketing objective.",
+      "solution": "Explain the campaign, assets, design, copy, or strategy you created.",
+      "tools": "Canva, CRM, Email",
+      "result": "Add a measurable outcome or business benefit if available."
+    },
+    {
+      "title": "Email Campaign / Newsletter",
+      "category": "Email & Campaigns",
+      "mediaType": "image",
+      "thumbnail": "",
+      "media": "",
+      "description": "Use this card for an email sequence, newsletter, investor update, outreach campaign, or nurture email.",
+      "challenge": "What audience or communication goal did the email address?",
+      "solution": "Describe your copywriting, design, segmentation, scheduling, or campaign setup.",
+      "tools": "Email Marketing, Copywriting, CRM",
+      "result": "Insert opens, clicks, replies, conversions, or another outcome when available."
+    },
+    {
+      "title": "Website or Landing Page",
+      "category": "Web & Landing Pages",
+      "mediaType": "external",
+      "thumbnail": "",
+      "media": "",
+      "description": "Insert a live website, landing page, funnel, or screenshot of your web project.",
+      "challenge": "Describe the page objective, audience, or conversion requirement.",
+      "solution": "Explain the layout, copy, CTA strategy, responsive design, or lead capture experience.",
+      "tools": "Web Design, Landing Page, Lead Capture",
+      "result": "Add conversion, traffic, lead, or usability results where applicable."
+    },
+    {
+      "title": "CRM Workflow",
+      "category": "CRM & Automation",
+      "mediaType": "image",
+      "thumbnail": "",
+      "media": "",
+      "description": "Show a CRM pipeline, automation map, workflow builder, contact structure, or lead routing process.",
+      "challenge": "Describe the manual process, bottleneck, or follow-up problem.",
+      "solution": "Explain the workflow logic, triggers, actions, stages, integrations, and follow-up sequence.",
+      "tools": "GoHighLevel, HubSpot, CRM",
+      "result": "Show how the workflow reduced manual work or improved lead handling."
+    },
+    {
+      "title": "Automation Dashboard / Demo",
+      "category": "CRM & Automation",
+      "mediaType": "video",
+      "thumbnail": "",
+      "media": "",
+      "description": "Use video to demonstrate Make.com, Zapier, GoHighLevel, API, or other automation work.",
+      "challenge": "Explain what needed to happen automatically.",
+      "solution": "Describe the automation flow, integration, logic, or troubleshooting work.",
+      "tools": "Make.com, Automation, API",
+      "result": "Insert saved time, fewer errors, faster response, or another operational result."
+    },
+    {
+      "title": "Database Management Project",
+      "category": "Data & Reporting",
+      "mediaType": "file",
+      "thumbnail": "",
+      "media": "",
+      "description": "Present spreadsheets, cleaned databases, dashboards, reporting tools, contact segmentation, or CRM data management.",
+      "challenge": "Describe the data accuracy, organization, or reporting requirement.",
+      "solution": "Explain cleanup, standardization, reporting, formulas, segmentation, or database structure.",
+      "tools": "Excel, Google Sheets, Database",
+      "result": "Add accuracy, reporting, productivity, or process improvements."
+    },
+    {
+      "title": "SOP Documentation",
+      "category": "SOP & Operations",
+      "mediaType": "pdf",
+      "thumbnail": "",
+      "media": "",
+      "description": "Insert an SOP, process guide, onboarding document, troubleshooting manual, or workflow documentation.",
+      "challenge": "Describe the process that needed to be documented or standardized.",
+      "solution": "Explain how you structured the steps, ownership, quality control, or training material.",
+      "tools": "SOP, Documentation, Operations",
+      "result": "Add training, consistency, onboarding, quality, or handoff improvements."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+# IMPORTANT:
+# Replace YOUR_GITHUB_USERNAME/YOUR_REPOSITORY with the repository
+# connected to this Netlify site.
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPOSITORY
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "https://YOUR-SITE.netlify.app"
+display_url: "https://YOUR-SITE.netlify.app"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Manager"
+    files:
+      - name: "portfolio_settings"
+        label: "Portfolio Website"
+        file: "content/portfolio.json"
+        format: "json"
+        fields:
+          - { label: "Your Name", name: "ownerName", widget: "string" }
+          - { label: "Initials / Logo Text", name: "initials", widget: "string", hint: "Example: JD" }
+          - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Headline", name: "heroTitle", widget: "text" }
+          - { label: "Hero Introduction", name: "heroText", widget: "text" }
+          - { label: "About Headline", name: "aboutTitle", widget: "string" }
+          - { label: "About Text", name: "aboutText", widget: "text" }
+          - { label: "Email", name: "email", widget: "string", required: false }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+          - label: "Resume"
+            name: "resume"
+            widget: "file"
+            required: false
+            media_folder: "/assets/uploads/resume"
+            public_folder: "/assets/uploads/resume"
+
+          - label: "Portfolio Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.category}}"
+            add_to_top: true
+            fields:
+              - { label: "Project Title", name: "title", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Real Estate"
+                  - "Design"
+                  - "Email & Campaigns"
+                  - "Web & Landing Pages"
+                  - "CRM & Automation"
+                  - "Lead Management"
+                  - "Data & Reporting"
+                  - "SOP & Operations"
+              - label: "Project Type"
+                name: "mediaType"
+                widget: "select"
+                options:
+                  - { label: "Image / Email Screenshot / Canva", value: "image" }
+                  - { label: "PDF", value: "pdf" }
+                  - { label: "Video", value: "video" }
+                  - { label: "External Website / Landing Page", value: "external" }
+                  - { label: "Other File (DOCX/XLSX/PPTX/ZIP)", value: "file" }
+              - label: "Card Preview Image"
+                name: "thumbnail"
+                widget: "image"
+                required: false
+                hint: "Recommended: 1600 × 1000 px or similar 16:10 ratio."
+              - label: "Project File / Media"
+                name: "media"
+                widget: "file"
+                required: false
+                hint: "Upload a PDF, image, video, document, spreadsheet, presentation, ZIP, or paste a URL for a live webpage."
+              - { label: "Short Description", name: "description", widget: "text" }
+              - { label: "Challenge", name: "challenge", widget: "text", required: false }
+              - { label: "Solution / Work Completed", name: "solution", widget: "text", required: false }
+              - { label: "Tools", name: "tools", widget: "string", required: false, hint: "Example: Canva, GoHighLevel, Make.com" }
+              - { label: "Result / Business Impact", name: "result", widget: "text", required: false }
