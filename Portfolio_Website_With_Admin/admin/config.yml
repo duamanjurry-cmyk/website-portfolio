@@ -3,7 +3,7 @@
 # connected to this Netlify site.
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPOSITORY
+  repo: duamanjurry-cmyk/website-portfolio
   branch: main
 
 media_folder: "assets/uploads"
