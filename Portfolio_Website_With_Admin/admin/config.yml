@@ -9,9 +9,8 @@ backend:
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
-site_url: "https://YOUR-SITE.netlify.app"
-display_url: "https://YOUR-SITE.netlify.app"
-
+site_url: "https://jurryduaman.netlify.app"
+display_url: "https://jurryduaman.netlify.app"
 collections:
   - name: "portfolio"
     label: "Portfolio Manager"
