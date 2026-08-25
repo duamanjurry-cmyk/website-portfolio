@@ -1,42 +1,39 @@
-# IMPORTANT:
-# Replace YOUR_GITHUB_USERNAME/YOUR_REPOSITORY with the repository
-# connected to this Netlify site.
 backend:
   name: github
   repo: duamanjurry-cmyk/website-portfolio
   branch: main
   site_domain: jurryduaman.netlify.app
-  
 
-media_folder:  "Portfolio_Website_With_Admin/assets/uploads"
+media_folder: "Portfolio_Website_With_Admin/assets/uploads"
 public_folder: "/assets/uploads"
 
 site_url: "https://jurryduaman.netlify.app"
 display_url: "https://jurryduaman.netlify.app"
+
 collections:
   - name: "portfolio"
     label: "Portfolio Manager"
     files:
       - name: "portfolio_settings"
         label: "Portfolio Website"
-        file:  "Portfolio_Website_With_Admin/content/portfolio.json"
+        file: "Portfolio_Website_With_Admin/content/portfolio.json"
         format: "json"
         fields:
           - { label: "Your Name", name: "ownerName", widget: "string" }
-          - { label: "Initials / Logo Text", name: "initials", widget: "string", hint: "Example: JD" }
+          - { label: "Initials / Logo Text", name: "initials", widget: "string" }
           - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string" }
           - { label: "Hero Headline", name: "heroTitle", widget: "text" }
           - { label: "Hero Introduction", name: "heroText", widget: "text" }
+
+          - { label: "Main Hero Image", name: "heroMainImage", widget: "image", required: false, hint: "Large featured image on the right. Recommended landscape image around 1600 x 1000 px." }
+          - { label: "Email Campaign Hero Image", name: "heroEmailImage", widget: "image", required: false, hint: "Optional small lower-left hero image." }
+          - { label: "Automation Hero Image", name: "heroAutomationImage", widget: "image", required: false, hint: "Optional small upper-right hero image." }
+
           - { label: "About Headline", name: "aboutTitle", widget: "string" }
           - { label: "About Text", name: "aboutText", widget: "text" }
           - { label: "Email", name: "email", widget: "string", required: false }
           - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
-          - label: "Resume"
-            name: "resume"
-            widget: "file"
-            required: false
-            media_folder: "/assets/uploads/resume"
-            public_folder: "/assets/uploads/resume"
+          - { label: "Resume", name: "resume", widget: "file", required: false }
 
           - label: "Portfolio Projects"
             name: "projects"
@@ -48,15 +45,7 @@ collections:
               - label: "Category"
                 name: "category"
                 widget: "select"
-                options:
-                  - "Real Estate"
-                  - "Design"
-                  - "Email & Campaigns"
-                  - "Web & Landing Pages"
-                  - "CRM & Automation"
-                  - "Lead Management"
-                  - "Data & Reporting"
-                  - "SOP & Operations"
+                options: ["Real Estate","Design","Email & Campaigns","Web & Landing Pages","CRM & Automation","Lead Management","Data & Reporting","SOP & Operations"]
               - label: "Project Type"
                 name: "mediaType"
                 widget: "select"
@@ -65,19 +54,11 @@ collections:
                   - { label: "PDF", value: "pdf" }
                   - { label: "Video", value: "video" }
                   - { label: "External Website / Landing Page", value: "external" }
-                  - { label: "Other File (DOCX/XLSX/PPTX/ZIP)", value: "file" }
-              - label: "Card Preview Image"
-                name: "thumbnail"
-                widget: "image"
-                required: false
-                hint: "Recommended: 1600 × 1000 px or similar 16:10 ratio."
-              - label: "Project File / Media"
-                name: "media"
-                widget: "file"
-                required: false
-                hint: "Upload a PDF, image, video, document, spreadsheet, presentation, ZIP, or paste a URL for a live webpage."
+                  - { label: "Other File", value: "file" }
+              - { label: "Card Preview Image", name: "thumbnail", widget: "image", required: false }
+              - { label: "Project File / Media", name: "media", widget: "file", required: false }
               - { label: "Short Description", name: "description", widget: "text" }
               - { label: "Challenge", name: "challenge", widget: "text", required: false }
               - { label: "Solution / Work Completed", name: "solution", widget: "text", required: false }
-              - { label: "Tools", name: "tools", widget: "string", required: false, hint: "Example: Canva, GoHighLevel, Make.com" }
+              - { label: "Tools", name: "tools", widget: "string", required: false }
               - { label: "Result / Business Impact", name: "result", widget: "text", required: false }
