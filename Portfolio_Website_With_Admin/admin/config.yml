@@ -8,7 +8,7 @@ backend:
   site_domain: jurryduaman.netlify.app
   
 
-media_folder: "Portfolio_Website_With_Admin/assets/uploads"
+media_folder:  "Portfolio_Website_With_Admin/assets/uploads"
 public_folder: "/assets/uploads"
 
 site_url: "https://jurryduaman.netlify.app"
@@ -19,7 +19,7 @@ collections:
     files:
       - name: "portfolio_settings"
         label: "Portfolio Website"
-        file: "Portfolio_Website_With_Admin/content/portfolio.json"
+        file:  "Portfolio_Website_With_Admin/content/portfolio.json"
         format: "json"
         fields:
           - { label: "Your Name", name: "ownerName", widget: "string" }
