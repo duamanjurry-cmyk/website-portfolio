@@ -28,10 +28,8 @@ collections:
           - { label: "Main Hero Image", name: "heroMainImage", widget: "image", required: false, hint: "Large featured image on the right. Recommended landscape image around 1600 x 1000 px." }
           - { label: "Email Campaign Hero Image", name: "heroEmailImage", widget: "image", required: false, hint: "Optional small lower-left hero image." }
           - { label: "Automation Hero Image", name: "heroAutomationImage", widget: "image", required: false, hint: "Optional small upper-right hero image." }
-          
-          - { label: "Main Hero Image", name: "heroMainImage", widget: "image", required: false }
-          - { label: "Email Campaign Hero Image", name: "heroEmailImage", widget: "image", required: false }
-          - { label: "Automation Hero Image", name: "heroAutomationImage", widget: "image", required: false }
+      
+
           
           - { label: "About Headline", name: "aboutTitle", widget: "string" }
           - { label: "About Text", name: "aboutText", widget: "text" }
