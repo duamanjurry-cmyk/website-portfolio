@@ -12,16 +12,8 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top">
-      <span class="brand-mark" id="brandInitials">YN</span>
-      <span class="brand-name" id="brandName">YOUR NAME</span>
-    </a>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a class="brand" href="#top"><span class="brand-mark" id="brandInitials">YN</span><span class="brand-name" id="brandName">YOUR NAME</span></a>
+    <nav><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
     <a class="button small" href="#contact">Let's Work Together</a>
   </header>
 
@@ -40,13 +32,22 @@
       <div class="hero-art">
         <div class="screen main-screen">
           <div class="browser"><i></i><i></i><i></i></div>
-          <div class="screen-content">
+          <img id="heroMainImage" class="hero-image" src="" alt="Featured portfolio project" hidden />
+          <div class="screen-content" id="heroMainPlaceholder">
             <small>FEATURED PROJECT</small>
-            <strong>Add your work from the admin dashboard</strong>
+            <strong>Add your main hero image from the admin dashboard</strong>
           </div>
         </div>
-        <div class="screen float-one"><small>EMAIL CAMPAIGN</small><b>Campaign Preview</b></div>
-        <div class="screen float-two"><small>AUTOMATION</small><b>Trigger → Action → Result</b></div>
+
+        <div class="screen float-one">
+          <img id="heroEmailImage" class="hero-mini-image" src="" alt="Email campaign portfolio sample" hidden />
+          <div id="heroEmailPlaceholder"><small>EMAIL CAMPAIGN</small><b>Campaign Preview</b></div>
+        </div>
+
+        <div class="screen float-two">
+          <img id="heroAutomationImage" class="hero-mini-image" src="" alt="Automation portfolio sample" hidden />
+          <div id="heroAutomationPlaceholder"><small>AUTOMATION</small><b>Trigger → Action → Result</b></div>
+        </div>
       </div>
     </section>
 
@@ -66,9 +67,7 @@
     </section>
 
     <section id="expertise" class="section tinted">
-      <div class="section-head">
-        <div><p class="eyebrow">CAPABILITIES</p><h2>What This Portfolio Can Showcase</h2></div>
-      </div>
+      <div class="section-head"><div><p class="eyebrow">CAPABILITIES</p><h2>What This Portfolio Can Showcase</h2></div></div>
       <div class="capabilities">
         <article><span>01</span><h3>Real Estate Marketing</h3><p>Property campaigns, brochures, flyers, investor collateral and social creative.</p></article>
         <article><span>02</span><h3>Email & Campaigns</h3><p>Email sequences, newsletters, investor updates, nurture and outbound campaigns.</p></article>
@@ -85,20 +84,13 @@
     </section>
 
     <section id="contact" class="contact">
-      <p class="eyebrow">CONTACT</p>
-      <h2>Have a project or opportunity in mind?</h2>
-      <p>Connect using the links below.</p>
-      <div class="actions" id="contactActions"></div>
+      <p class="eyebrow">CONTACT</p><h2>Have a project or opportunity in mind?</h2>
+      <p>Connect using the links below.</p><div class="actions" id="contactActions"></div>
     </section>
   </main>
 
   <footer><span id="footerName"></span><span>Professional Portfolio</span></footer>
-
-  <dialog id="modal">
-    <button class="close" id="closeModal">×</button>
-    <div id="modalContent"></div>
-  </dialog>
-
+  <dialog id="modal"><button class="close" id="closeModal">×</button><div id="modalContent"></div></dialog>
   <script src="/script.js"></script>
 </body>
 </html>
